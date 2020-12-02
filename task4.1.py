@@ -4,7 +4,7 @@ def binarySearchRecursive(sequence, x, left, right):
         mid = (left+right)//2
         print('mid', sequence[mid])
 
-        if (sequence[mid] == x):
+        if x == sequence[mid]:
             return mid
         elif x < sequence[mid]:
             return binarySearchRecursive(sequence, x, left, mid - 1)

@@ -6,7 +6,7 @@ def binarySearchIterative(sequence, x):
     while left <= right:
         mid = ((left + right) // 2)
         print('mid', sequence[mid])
-        if (sequence[mid] == x):
+        if x == sequence[mid]:
             return mid
         elif x < sequence[mid]:
             right = mid-1
